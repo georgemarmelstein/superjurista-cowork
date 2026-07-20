@@ -47,6 +47,7 @@ Exemplos publicados:
 | `sentenca-minuta` | Sentença integral: linha do tempo → relatório → análise → fundamentação → montagem, com gates de âncora e gate local de citações dos autos |
 | `radar-precedentes` | Mapa de um tema em toda a Justiça Federal de 2º grau, com trechos verbatim citáveis |
 | `analisar-sessao` | Revisão econômica de pauta de sessão colegiada: teses por ementa, detecção de incoerências/erros/sensibilidade, confronto jurisprudencial só onde há mérito e relatório de alertas |
+| `embargos-advogado` | Embargos de declaração na perspectiva do advogado: síntese das peças + linha do tempo, análise de vícios da decisão (com veredito de viabilidade e alerta de prequestionamento) e minuta da petição — se a análise disser "não embargue", o pipeline para e explica |
 
 Regra de ouro do sistema: **nenhuma citação sem verificação**. Jurisprudência
 só via buscas ao vivo do conector; citações dos autos conferidas localmente
