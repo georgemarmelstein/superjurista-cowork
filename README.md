@@ -20,6 +20,11 @@ execução (`carregar_pipeline` / `carregar_missao`). Sem assinatura ativa, o
 corpo é inerte. Com assinatura, **pipelines novos aparecem sem reinstalar
 nada** — eles são conteúdo do servidor, não código do plugin.
 
+**Degustação incluída:** instalar o plugin já entrega algo vivo — o catálogo
+completo do produto e UMA resposta jurídica completa gratuita por dia
+(busca de jurisprudência ao vivo + prompt curado). O acesso ilimitado é por
+assinatura: <https://mcp.superjurista.com/assinar>.
+
 ## Instalação
 
 **No Claude Cowork (desktop):**
