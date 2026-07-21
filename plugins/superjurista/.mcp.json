@@ -2,10 +2,7 @@
   "mcpServers": {
     "superjurista": {
       "type": "http",
-      "url": "https://mcp.superjurista.com/mcp",
-      "headers": {
-        "Authorization": "Bearer ${SUPERJURISTA_CONVITE}"
-      }
+      "url": "https://mcp.superjurista.com/mcp"
     }
   }
 }

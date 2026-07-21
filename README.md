@@ -25,15 +25,23 @@ nada** — eles são conteúdo do servidor, não código do plugin.
 **No Claude Cowork (desktop):**
 1. Cowork → **Customize** → **Plugins** → adicionar marketplace a partir deste
    repositório (GitHub/Git URL).
-2. Instalar o plugin **superjurista**. O conector MCP do gateway vem embutido.
-3. Numa conversa nova, peça qualquer tarefa jurídica — o bootstrap
-   (`iniciar_superjurista`) valida a assinatura e carrega a constituição.
+2. Instalar o plugin **superjurista**. O conector embutido já vem apontado para
+   `mcp.superjurista.com` — sem credencial, ele acorda em **modo recepção**.
+3. Numa conversa nova, o SuperJurista se apresenta e pede o seu **convite
+   pessoal** (`ativar_superjurista`): informe o código `sj-...` e siga o passo
+   a passo devolvido (adicionar o conector pessoal — vale em todas as
+   superfícies da conta). Sem convite, nada de valor é servido.
 
 **No Claude Code:**
 ```
 /plugin marketplace add <url-deste-repo>
 /plugin install superjurista@superjurista
 ```
+
+**Assinante com a página de boas-vindas:** o caminho mais curto nem precisa
+deste repositório — basta o gesto único da página `/acesso/<convite>` (colar a
+URL pessoal em Configurações → Conectores). Este plugin acrescenta os recursos
+locais do Cowork: OCR dos autos sem rede, agentes paralelos e gate de citações.
 
 ## O que ele faz
 
