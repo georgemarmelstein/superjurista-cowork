@@ -31,11 +31,12 @@ assinatura: <https://mcp.superjurista.com/assinar>.
 1. Cowork → **Customize** → **Plugins** → adicionar marketplace a partir deste
    repositório (GitHub/Git URL).
 2. Instalar o plugin **superjurista**. O conector embutido já vem apontado para
-   `mcp.superjurista.com` — sem credencial, ele acorda em **modo recepção**.
-3. Numa conversa nova, o SuperJurista se apresenta e pede o seu **convite
-   pessoal** (`ativar_superjurista`): informe o código `sj-...` e siga o passo
-   a passo devolvido (adicionar o conector pessoal — vale em todas as
-   superfícies da conta). Sem convite, nada de valor é servido.
+   `mcp.superjurista.com` — sem credencial, ele acorda em **modo degustação**: o
+   catálogo completo fica visível e você tem direito a UMA resposta jurídica
+   completa gratuita por dia — basta pedir a primeira tarefa jurídica.
+3. Para acesso ilimitado, informe o seu **convite pessoal** (código `sj-...`) na
+   conversa e a ativação é guiada pelo próprio SuperJurista. Sem convite, o
+   caminho é <https://mcp.superjurista.com/assinar>.
 
 **No Claude Code:**
 ```
