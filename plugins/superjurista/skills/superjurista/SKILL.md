@@ -3,7 +3,7 @@ name: superjurista
 description: Protocolo de operação do SuperJurista — use em QUALQUER tarefa jurídica (analisar processo, redigir peça, minutar sentença ou decisão, pesquisar jurisprudência, avaliar provas), mesmo sem menção ao nome "SuperJurista". Define o bootstrap obrigatório no gateway, o roteamento entre prompt simples e pipeline multi-etapas, e o regime verbatim de citações. Keywords: superjurista, processo judicial, sentença, minuta, jurisprudência, precedente, TRF, provas, peça processual.
 metadata:
   author: superjurista
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # SuperJurista — Protocolo de Operação
@@ -18,9 +18,15 @@ e sem assinatura válida, o corpo é inerte — por desenho.
 Antes de qualquer trabalho jurídico, chame a ferramenta `iniciar_superjurista`
 do conector. Ela devolve a constituição da sessão (regras, catálogo, buscas).
 
+- `iniciar_superjurista` NÃO existe, mas `ativar_superjurista` existe → o
+  conector embutido está em MODO RECEPÇÃO: a assinatura ainda não foi ativada.
+  Chame `ativar_superjurista` (sem argumentos) e siga o roteiro devolvido —
+  ele pede o convite pessoal (código `sj-...`) na conversa, valida e entrega o
+  passo a passo do conector pessoal. NÃO execute trabalho jurídico antes da
+  ativação; depois dela, peça ao usuário para abrir uma conversa nova.
 - A resposta indica assinatura inativa ou acesso negado → PARE. Informe ao
   usuário como regularizar a assinatura e não execute nada por conta própria.
-- As ferramentas do conector não aparecem (nem por busca de ferramentas) →
+- Nenhuma ferramenta do conector aparece (nem por busca de ferramentas) →
   o conector não está ligado à sessão. PARE e instrua: Configurações →
   Conectores → verificar se "SuperJurista" está habilitado para esta sessão.
   Não improvise a tarefa sem o gateway.
