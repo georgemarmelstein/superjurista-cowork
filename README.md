@@ -20,23 +20,24 @@ execução (`carregar_pipeline` / `carregar_missao`). Sem assinatura ativa, o
 corpo é inerte. Com assinatura, **pipelines novos aparecem sem reinstalar
 nada** — eles são conteúdo do servidor, não código do plugin.
 
-**Degustação incluída:** instalar o plugin já entrega algo vivo — o catálogo
-completo do produto e UMA resposta jurídica completa gratuita por dia
-(busca de jurisprudência ao vivo + prompt curado). O acesso ilimitado é por
-assinatura: <https://mcp.superjurista.com/assinar>.
+**Instalar → Conectar → Escolher:** ao instalar o plugin, o Claude abre o
+login do SuperJurista com dois caminhos: **experimentar sem convite** (visitante
+com 1 resposta completa gratuita por dia) ou **tenho convite** (assinante com
+acesso ilimitado). Seu convite (`sj-...`) também pode ser digitado na conversa
+para elevar a conta sem reconectar. Para assinatura:
+<https://mcp.superjurista.com/assinar>.
 
 ## Instalação
 
 **No Claude Cowork (desktop):**
 1. Cowork → **Customize** → **Plugins** → adicionar marketplace a partir deste
    repositório (GitHub/Git URL).
-2. Instalar o plugin **superjurista**. O conector embutido já vem apontado para
-   `mcp.superjurista.com` — sem credencial, ele acorda em **modo degustação**: o
-   catálogo completo fica visível e você tem direito a UMA resposta jurídica
-   completa gratuita por dia — basta pedir a primeira tarefa jurídica.
-3. Para acesso ilimitado, informe o seu **convite pessoal** (código `sj-...`) na
-   conversa e a ativação é guiada pelo próprio SuperJurista. Sem convite, o
-   caminho é <https://mcp.superjurista.com/assinar>.
+2. Instalar o plugin **superjurista**. O Claude abre automaticamente o login do
+   SuperJurista: escolha **experimentar sem convite** (visitante com 1 resposta/dia)
+   ou **tenho convite** (assinante com acesso ilimitado).
+3. Após login, o conector fica ativo: assinantes começam com `iniciar_superjurista`;
+   visitantes usam `ativar_superjurista` e têm direito a uma tarefa completa gratuita
+   por dia. Para elevar para assinante, digite seu convite (`sj-...`) na conversa.
 
 **No Claude Code:**
 ```
