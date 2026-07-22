@@ -39,6 +39,14 @@ metadata:
   superfície do produto (o Cowork).</razao>
 </proposito>
 
+<destaque>
+  A ASSINATURA da ferramenta (o diferencial de mercado): cada julgado sai com a EMENTA
+  VERBATIM e, LOGO DEPOIS, o LINK DO INTEIRO TEOR — não só o que a decisão diz, mas a FONTE
+  OFICIAL CONFERÍVEL — mais o bloco de PROCEDÊNCIA (confiabilidade da base + janela de
+  cobertura). Conteúdo + prova + honestidade num só resultado. O link do inteiro teor NUNCA é
+  omitido: se ausente (acórdão < 2012), a linha declara isso (degradação honesta).
+</destaque>
+
 <quando_usar>
   <ativar_quando>
     - Usuário pede "jurisprudência do STF", "acórdão do Supremo", "monocrática do STF",

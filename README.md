@@ -66,6 +66,17 @@ Exemplos publicados:
 | `analisar-sessao` | Revisão econômica de pauta de sessão colegiada: teses por ementa, detecção de incoerências/erros/sensibilidade, confronto jurisprudencial só onde há mérito e relatório de alertas |
 | `embargos-advogado` | Embargos de declaração na perspectiva do advogado: síntese das peças + linha do tempo, análise de vícios da decisão (com veredito de viabilidade e alerta de prequestionamento) e minuta da petição — se a análise disser "não embargue", o pipeline para e explica |
 
+## ⭐ Destaque — busca do STF por navegador (`jurisprudencia-stf`)
+
+Jurisprudência **viva** do Supremo (acórdãos desde 1950, repercussão geral,
+súmulas, monocráticas, informativos), dirigindo o navegador do Cowork — a única
+rota que alcança o STF (que bloqueia acesso de datacenter). **O diferencial que
+nenhum concorrente entrega:** cada julgado sai com a **ementa verbatim E, logo
+depois, o link do inteiro teor** — não só *o que* a decisão diz, mas a **fonte
+oficial conferível** — acompanhados do bloco de **PROCEDÊNCIA** (confiabilidade da
+base e janela de cobertura). Ementa + inteiro teor + procedência: conteúdo,
+prova e honestidade num só resultado.
+
 Perdido? Diga **"me ajuda a usar o SuperJurista"** — o assistente de ajuda
 (skill `ajuda-superjurista`) explica o sistema em linguagem de gabinete,
 diagnostica o que você precisa e conduz à rota certa, sem jargão técnico.
