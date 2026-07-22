@@ -84,19 +84,25 @@ metadata:
     não despeje centenas de itens.
   </passo>
 
-  <passo numero="3" nome="Formatar a saída — SEMPRE com procedência">
+  <passo numero="3" nome="Formatar a saída — ementa VERBATIM + inteiro teor logo depois">
     - **buscar** (padrão): XML `<jurisprudencia_stf>` (ver `<conhecimento>`).
-    - **gerar_relatorio**: Markdown com o BLOCO DE CITAÇÃO por item:
+    - **gerar_relatorio**: Markdown com o BLOCO DE CITAÇÃO por item, nesta ordem:
       ```
-      REFERÊNCIA   STF, <classe> <numero>, Rel. Min. <relator>, <órgão>, j. <data_julg>, DJe <data_pub>.
-      EMENTA       <ementa verbatim, recuada>
-      PROCEDÊNCIA  STF (oficial) · inteiro teor: <link do PDF | "não disponível (< 2012)"> ·
-                   cobertura da base: acórdãos desde 06/07/1950 · consultado em <data>.
+      REFERÊNCIA    STF, <classe> <numero>, Rel. Min. <relator>, <órgão>, j. <data_julg>, DJe <data_pub>.
+      EMENTA        <ementa verbatim, recuada>
+      INTEIRO TEOR  <link do PDF (obterInteiroTeor.asp)>
+      PROCEDÊNCIA   STF (oficial) · cobertura: acórdãos desde 06/07/1950 · consultado em <data>.
       ```
     - **listar_filtros**: bases, operadores (de `references/sintaxe-booleana.md`), filtros.
-    Regras de PROCEDÊNCIA (contrato-epistemico): ementa sempre VERBATIM (nunca de memória);
-    súmula com `vinculante` sinalizada; se a base é `informativos`, marcar "(informativo — sem
-    valor oficial)". `total=0` = "não encontrado nesta base/sintaxe", NUNCA "não existe".
+
+    REGRA DE OURO (a assinatura da ferramenta): **logo após a ementa, SEMPRE gerar o link do
+    INTEIRO TEOR** (campo `inteiroTeorUrl` do item). É o diferencial — a ementa dá o conteúdo, o
+    link dá a fonte conferível. Se o link vier vazio (acórdão anterior a ~2012), escrever
+    "inteiro teor não disponível (acórdão < 2012)" e usar o `acompanhamentoUrl` quando houver —
+    nunca omitir a linha (degradação honesta).
+    Demais regras (contrato-epistemico): ementa sempre VERBATIM (nunca de memória); súmula com
+    `vinculante` sinalizada; base `informativos` → marcar "(informativo — sem valor oficial)";
+    `total=0` = "não encontrado nesta base/sintaxe", NUNCA "não existe".
   </passo>
 
   <passo numero="4" nome="Retorno conciso">
