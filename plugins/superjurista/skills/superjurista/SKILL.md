@@ -33,9 +33,9 @@ Após autenticar, o acesso da conta é determinado pelo token OAuth:
 
 | Pedido | Rota |
 |--------|------|
-| Tarefa jurídica pontual (uma peça, uma análise, um parecer) | `carregar_prompt(id)` — catálogo em `listar_prontos()` |
+| Tarefa jurídica pontual (uma peça, uma análise, um parecer) | `carregar_prompt(id)` — catálogo em `listar_prompts()` |
 | Trabalho multi-etapas (tribunal probatório, sentença completa, mapa de precedentes) | Skill `executar-pipeline` — manifesto via `carregar_pipeline(id)` |
-| Pesquisa de jurisprudência avulsa | `buscar_radar` (6 TRFs) / `buscar_trf1..trf6` / `buscar_julia_publico` |
+| Pesquisa de jurisprudência avulsa | `buscar_jurisprudencia` (`tribunal: 'todos'` = 6 TRFs de uma vez; `'trf1'..'trf6'` ou `'julia'` = base específica) |
 | Autos em PDF | Skill `preparar-autos` (OCR local) ANTES de qualquer pipeline |
 
 ## Regime verbatim (inegociável)

@@ -2,7 +2,7 @@
 
 > Material de apoio do concierge. Os exemplos de fluxo citados aqui refletem o
 > catálogo no momento da escrita — a lista válida do dia vem SEMPRE de
-> `carregar_pipeline()` e `listar_prontos()`. Se um exemplo daqui não constar
+> `carregar_pipeline()` e `listar_prompts()`. Se um exemplo daqui não constar
 > do catálogo vivo, não prometê-lo; se o catálogo trouxer fluxos novos,
 > apresentá-los com a mesma lógica destes.
 
@@ -15,7 +15,7 @@
 | Minutar sentença de um processo | Fluxo de minuta de sentença | Linha do tempo, relatório, análise do caso (com pesquisa de precedentes ao vivo), fundamentação com dispositivo e sentença montada — cada peça num arquivo da pasta do caso |
 | Avaliar se a prova sustenta condenação/procedência | Tribunal probatório adversarial | Tese pró-autor e tese pró-réu construídas em paralelo, réplicas cruzadas e síntese final por fato controvertido (provado / não provado / non liquet) |
 | Revisar a pauta antes da sessão colegiada | Fluxo de análise de sessão | Alertas em ordem de gravidade: mesma questão decidida de dois jeitos na mesma pauta, contrariedade a jurisprudência, incoerência interna, erro material — com relatório HTML navegável |
-| Conferir a redação de uma decisão antes de publicar | Pronto de análise de vícios (o mesmo mapeamento que subsidia embargos serve como revisão preventiva da própria decisão) | Mapa de omissões, contradições, obscuridades e erros materiais |
+| Conferir a redação de uma decisão antes de publicar | Prompt de análise de vícios (o mesmo mapeamento que subsidia embargos serve como revisão preventiva da própria decisão) | Mapa de omissões, contradições, obscuridades e erros materiais |
 
 ### Advogado(a)
 
@@ -24,7 +24,7 @@
 | "Cabem embargos de declaração desta decisão?" | Fluxo de embargos (perspectiva do advogado) | Síntese das peças + análise de vícios com veredito honesto (RECOMENDADO / POSSÍVEL MAS ARRISCADO / NÃO RECOMENDADO) e alerta de prequestionamento; se recomendado, a minuta da petição sai pronta |
 | Preparar recurso contra sentença | Fluxo de apelação, se constar do catálogo vivo | Mapa recursal da sentença (capítulos, interesse recursal, pontos atacáveis), pesquisa de precedentes e razões redigidas |
 | Saber o terreno antes de firmar uma tese | Radar de precedentes | Mapa do tema em toda a Justiça Federal de 2º grau, com convergências, divergências e trechos citáveis copiados verbatim das buscas |
-| Peça ou parecer pontual | Pronto do catálogo | O modelo curado da tarefa, aplicado aos documentos fornecidos |
+| Peça ou parecer pontual | Prompt do catálogo | O modelo curado da tarefa, aplicado aos documentos fornecidos |
 
 ### Qualquer perfil
 
@@ -71,7 +71,7 @@
    "foi conferido".
 
 7. **Tarefa pequena não precisa de fluxo.** Para um despacho simples, um
-   parecer curto, uma revisão de texto: `listar_prontos()` tem dezenas de
+   parecer curto, uma revisão de texto: `listar_prompts()` tem dezenas de
    modelos curados que resolvem em uma passada. Fluxo completo é para trabalho
    de fôlego.
 

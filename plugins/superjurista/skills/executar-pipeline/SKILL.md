@@ -89,7 +89,7 @@ mesmo o documento para "passar no gate".
 - Subagentes não usam TodoWrite; o controle é seu.
 - Ferramenta `carregar_pipeline` inexistente no conector → o gateway ainda não
   publicou a fábrica: informe que o servidor precisa de atualização e ofereça
-  os prontos avulsos (`listar_prontos`) como alternativa. Não simule pipeline.
+  os prompts avulsos (`listar_prompts`) como alternativa. Não simule pipeline.
 - Conector conectado mas ferramentas não encontradas nem via busca → sintoma
   de falha de plataforma conhecida (conector custom não ligando à sessão):
   reporte ao usuário com esta descrição e sugira testar no claude.ai.

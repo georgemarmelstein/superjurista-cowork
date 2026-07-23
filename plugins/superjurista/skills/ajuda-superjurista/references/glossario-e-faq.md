@@ -12,7 +12,7 @@
 | Subagente | "Assistente especializado que faz UMA etapa (ex.: só a linha do tempo, só a análise) — por isso cada etapa sai focada" |
 | Workspace / pasta do caso | "A pasta no seu computador onde ficam os autos e tudo o que o sistema produzir sobre este caso" |
 | Conector / gateway | "O serviço SuperJurista na nuvem, que fornece os modelos de trabalho e as buscas de jurisprudência — exige assinatura ativa" |
-| Pronto / prompt curado | "Modelo de tarefa pronto: um roteiro profissional para uma tarefa pontual (um parecer, uma análise, uma peça)" |
+| Prompt curado | "Modelo de tarefa pronto: um roteiro profissional para uma tarefa pontual (um parecer, uma análise, uma peça)" |
 | Missão | "A instrução detalhada que cada assistente especializado recebe para a sua etapa" |
 | Regime verbatim | "Regra de ouro das citações: só entra entre aspas o que foi copiado exatamente da fonte (dos autos ou de uma busca real de jurisprudência feita na hora)" |
 | OCR | "Leitura de páginas escaneadas: transforma a imagem do PDF em texto pesquisável, no seu próprio computador" |
@@ -40,7 +40,7 @@ aumentada, produz minutas e análises para revisão humana — não substitui o
 juízo profissional. Recomendar sempre a leitura crítica do resultado.
 
 **"Quanto tempo demora?"**
-Tarefa pontual (pronto): a resposta sai na conversa, em minutos. Fluxo
+Tarefa pontual (prompt): a resposta sai na conversa, em minutos. Fluxo
 completo: vários minutos — o sistema anuncia cada etapa em uma linha, e o
 usuário pode acompanhar sem abrir arquivo nenhum.
 

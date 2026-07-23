@@ -98,7 +98,7 @@ veredito (com hash) é registrado.
 - O runtime (`executar-pipeline`) segue o manifesto servido pelo gateway;
   a fábrica de pipelines do servidor está em implantação — se
   `carregar_pipeline` ainda não existir no conector, o plugin oferece os
-  prompts avulsos (`listar_prontos`) e avisa.
+  prompts avulsos (`listar_prompts`) e avisa.
 - Bugs de plataforma conhecidos e monitorados: conectores custom podem não
   ligar a sessões do Cowork (anthropics/claude-ai-mcp#584) e pedidos de
   permissão por tool call em contas Team (#491).

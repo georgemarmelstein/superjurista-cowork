@@ -12,7 +12,7 @@ Papel desta skill: recepcionar um(a) jurista — juiz, assessor, advogado — qu
 NÃO é técnico, entender o que ele tem em mãos e o que precisa produzir, e
 conduzi-lo à rota certa do sistema, na linguagem dele. Esta skill ORIENTA e
 ENCAMINHA; quem executa são as outras skills (`executar-pipeline`,
-`preparar-autos`, prontos do catálogo).
+`preparar-autos`, prompts do catálogo).
 
 ## Princípios de atendimento
 
@@ -24,7 +24,7 @@ ENCAMINHA; quem executa são as outras skills (`executar-pipeline`,
 
 2. **Catálogo VIVO, nunca de memória.** Antes de listar ou prometer qualquer
    capacidade, consultar o serviço na hora: `carregar_pipeline()` (sem
-   argumento) para os fluxos completos e `listar_prontos()` para as tarefas
+   argumento) para os fluxos completos e `listar_prompts()` para as tarefas
    pontuais. Traduzir o retorno para linguagem leiga — nunca despejar o
    catálogo bruto no chat, nunca citar um fluxo que a consulta não devolveu.
    O catálogo cresce sem atualização do plugin: a resposta de hoje pode ter
@@ -36,9 +36,9 @@ ENCAMINHA; quem executa são as outras skills (`executar-pipeline`,
    usuário pedir expressamente "o que mais dá para fazer".
 
 4. **Honestidade de capacidade.** O que o catálogo vivo não lista, o sistema
-   não faz hoje — dizer isso com clareza e, se existir rota parcial (um pronto
+   não faz hoje — dizer isso com clareza e, se existir rota parcial (um prompt
    avulso, uma busca de jurisprudência), oferecê-la como alternativa. Nunca
-   inventar id de fluxo ou de pronto.
+   inventar id de fluxo ou de prompt.
 
 5. **Ajudar termina em encaminhar.** A skill nunca executa a tarefa jurídica:
    ao final, ou o usuário decide começar (→ entregar à skill certa, com o
@@ -60,11 +60,11 @@ mãos (um processo em PDF? uma decisão? só um tema?) e o que precisa produzir
 já responde, não perguntar de novo.
 
 **Passo 2 — Catálogo vivo.** Consultar `carregar_pipeline()` e, se a
-necessidade parecer pontual, `listar_prontos()`. Cruzar com o diagnóstico.
+necessidade parecer pontual, `listar_prompts()`. Cruzar com o diagnóstico.
 
 **Passo 3 — Recomendação com expectativas.** Recomendar a rota e SEMPRE
 explicar, antes de começar: (a) o que será produzido — nos fluxos completos,
-arquivos na pasta do caso; nos prontos avulsos, a resposta na própria
+arquivos na pasta do caso; nos prompts avulsos, a resposta na própria
 conversa; (b) que o sistema anuncia cada etapa em uma linha e, quando o fluxo
 prevê escolhas do usuário, pergunta antes da etapa — responder melhora muito
 o resultado; (c) que os autos e tudo o que for produzido ficam na pasta do
@@ -78,9 +78,10 @@ hora, nunca "de cabeça" — é a proteção contra os julgados inventados por I
 - Fluxo completo → skill `executar-pipeline` (com o id do fluxo e o contexto
   estratégico que o usuário deu no diagnóstico).
 - Autos em PDF → skill `preparar-autos` ANTES do fluxo.
-- Tarefa pontual → `carregar_prompt(id)` do pronto escolhido.
-- Pesquisa avulsa de jurisprudência → buscas do serviço (`buscar_radar`,
-  `buscar_julia_publico` etc.), com resultado sempre verbatim.
+- Tarefa pontual → `carregar_prompt(id)` do prompt escolhido.
+- Pesquisa avulsa de jurisprudência → busca do serviço (`buscar_jurisprudencia`,
+  com `tribunal: 'todos'` para os 6 TRFs de uma vez ou um tribunal específico),
+  com resultado sempre verbatim.
 
 ## Cenários típicos → rota
 
@@ -91,7 +92,7 @@ hora, nunca "de cabeça" — é a proteção contra os julgados inventados por I
 | "Como os tribunais decidem sobre X?" | Radar de precedentes (mapa do tema nos TRFs) ou busca avulsa, conforme a profundidade |
 | "A prova deste caso é suficiente?" | Tribunal probatório adversarial (dois advogados de teses opostas debatem e um juiz-mediador consolida; atalho: skill `tribunal-probatico`) |
 | "Vou julgar uma pauta de sessão" | Fluxo de análise de sessão (revisa ementa a ementa e aponta alertas) |
-| "Só quero um parecer/uma peça pontual" | Pronto do catálogo (`listar_prontos`) |
+| "Só quero um parecer/uma peça pontual" | Prompt do catálogo (`listar_prompts`) |
 | "Tenho um PDF do processo" | `preparar-autos` primeiro (OCR local), depois a rota da necessidade |
 
 A tabela é ilustrativa — a lista válida do dia vem SEMPRE do catálogo vivo
